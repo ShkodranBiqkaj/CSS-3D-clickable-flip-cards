@@ -31,7 +31,6 @@ body {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    // Adjusted transition duration for a longer spin effect
     transition: transform 2s cubic-bezier(0.75, 0, 0.85, 1);
   }
 }
@@ -39,7 +38,6 @@ body {
 .more {
   display: none;
   &:checked ~ .content {
-    // 900deg = 180deg flip + 720deg (2 full spins) for the double spin effect
     transform: rotateY(900deg);
   }
 }
@@ -70,7 +68,6 @@ body {
   position: relative;
   z-index: 2;
   
-  // Modified overlay with reduced opacity
   &:after {
     content: '';
     position: absolute;
